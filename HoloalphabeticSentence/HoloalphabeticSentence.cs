@@ -10,12 +10,15 @@ namespace HoloalphabeticSentence
         {
 			string str = input.ToLower();
 			Boolean flag = true;
+
 			foreach (char c  in alphabets) {
 				if ((str.IndexOf(c) == -1)) {
 					flag = false;
 					break;
 				}
 			}
+
+
 
             return flag;
         }
